@@ -11,6 +11,10 @@ div{
     width: 100%;
 }
 
+span{
+    display: block;
+}
+
 /* Header */
 
 /* Content */
