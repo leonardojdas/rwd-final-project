@@ -13,11 +13,10 @@ div{
 
 /* Bootstrap #1 - carosel */
 .carousel-item{
-    background-color: #a8dadc;
     text-align: center;
 }
 
-.carousel-item > img{
+.carousel-item img{
     margin: 0 auto;
 }
 
@@ -26,26 +25,45 @@ div{
 }
 
 .carousel-inner{
-    background-color: orange;
+    background-color: #a8dadc;
 }
 
+@media screen and (min-width: 665px) and (max-width: 760px){
+    .carousel-item img{
+        width: 100%;
+    }
+
+    #header-video{
+        height: calc(100vw - 375px) !important;
+    }
+}
+
+@media screen and (max-width: 665px){
+    .carousel-item img{
+        width: 100%;
+    }
+
+    #header-video{
+        height: 280px !important;
+    }
+}
 
 /* Header */
 #header{
-    height: 400px;
-    background-color: rgba(000000, 000000, 000000, 0.15);
-    background-image: none; /* insert the video here */
+    /* height: 400px; */
+    /* background-color: rgba(000000, 000000, 000000, 0.15); */
 }
 
 #header-logo{
     width: 100px;
     float: left;
+    border-style: none;
     padding: 20px 0px 20px 0px;
     background-color: #e63946;
     text-align: center;
 }
 
-#header-logo > img{
+#header-logo img{
     width: 50px;
 }
 
@@ -55,28 +73,27 @@ div{
 
 #header-list{
     height: 73px;
-    /* line-height: 63px; */
-    padding-top: 9px;
     background-color: #e63946;
 }
 
 .nav-list{
+    font-size: 1em;
     list-style: none;
     margin: 0;
-    padding-left: 0;
+    padding: 12px 0 0 0;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-}
-
-.nav-list > li{
-    padding: 0px 20px 5px 0px;
     color: #f1faee;
 }
 
-.nav-list > li:last-child{
-    padding: 0px 50px 0px 0px;
-    color: #f1faee;
+.nav-list li::after{
+    content: "\2022";
+    margin: 0px 15px 0px 15px;
+}
+
+.nav-list li:last-child::after{
+    content: "";
+    margin: 0px 0px 0px 0px;
 }
 
 .nav-button{
@@ -91,17 +108,68 @@ div{
     flex-direction: row;
 }
 
-#header a{
-    color: green;
+/* ----- header video ----- */
+#header-video{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media screen and (max-width: 991px){
+#header-video h1{
+    text-align: center;
+    font-size: 2rem;
+    z-index: 1;
+    background-color: #f1faee;
+}
+
+#header-video-container{
+    width: 100%;
+    height: inherit;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#header-video-container video{
+    width: 100%;
+}
+
+.color-overlay{
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f1faee;
+    opacity: 0.6;
+}
+
+#header a{
+    color: #f1faee;
+    text-decoration: none;
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#header a:hover{
+    color: #a8dadc;
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+@media screen and (max-width: 920px){
     #header-nav{
-        width: calc(100% - 100px);
         height: 73px;
         line-height: 73px;
         padding-right: 10px;
-        float: left;
         text-align: right;
         display: block;
         background-color: #e63946;
@@ -117,10 +185,9 @@ div{
         border-radius: 10px;
         text-align: center;
         cursor: pointer;
-        /* background-color: #f1faee; */
     }
 
-    .nav-button > span{
+    .nav-button span{
         display: block;
         width: 30px;
         height: 4px;
@@ -143,7 +210,8 @@ div{
     }
 
     .nav-list{
-        padding: 0px 0px 25px 25px;
+        list-style: inside;
+        padding: 0px 0px 20px 25px;
         background-color: #e63946;
         -webkit-column-count: 2;
         -moz-column-count: 2;
@@ -151,8 +219,13 @@ div{
         column-count: 2;
     }
 
-    .nav-list > li::after{
+    .nav-list li{
+        padding-bottom: 5px;
+    }
+
+    .nav-list li::after{
         content: "";
+        margin: 0px 0px 0px 0px;
     }
 
     #nav-toggle:checked ~ ul{
@@ -167,5 +240,15 @@ div{
 }
 
 /* Content */
+#content{
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+}
 
 /* Footer */
+#footer{
+    width: 100%;
+    height: 200px;
+    background-color: orchid;
+}
