@@ -11,7 +11,26 @@ div{
     width: 100%;
 }
 
-/* Bootstrap #1 - carosel */
+/* Bootstrap #1 - Navibar - Minor changes */
+/* https://getbootstrap.com/docs/5.1/components/navbar/ */
+.navbar-brand{
+    margin-right: 0 !important;
+}
+
+.navbar-toggler{
+    border-color: rgba(255,255,255, 0.5) !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.container-fluid{
+    padding-left: 0 !important;
+}
+
+/* Bootstrap #2 - Carosel - Minor changes */
+/* https://getbootstrap.com/docs/5.1/components/carousel/ */
 .carousel-item{
     text-align: center;
 }
@@ -24,25 +43,51 @@ div{
     margin-left: 0px !important;
 }
 
-.carousel-inner{
-    background-color: #a8dadc;
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
 }
 
-@media screen and (min-width: 665px) and (max-width: 760px){
-    .carousel-item img{
-        width: 100%;
-    }
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
 
+.carousel-container{
+    padding: 50px 0px 50px 0px;
+    background-color: #f7f7f9;
+    position: relative;
+    z-index: auto;
+}
+
+/* Bootstrap #3 - Card */
+.card{
+    margin: 0 auto;
+    float: left;
+    /* position: relative; */
+}
+
+/* Bootstrap #4 - Typography */
+.display-2{
+    z-index: 1;
+    background-color: #f1faee;
+}
+
+/* Bootstrap #5 - Responsive Images */
+
+/* Bootstrap #6 - Dropdown */
+
+/* Bootstrap #7 - Tooltips */
+/* https://getbootstrap.com/docs/5.1/components/tooltips/ */
+
+/* Bootstrap #8 -  Collapsible Content */
+
+
+@media screen and (min-width: 665px) and (max-width: 760px){
     #header-video{
         height: calc(100vw - 375px) !important;
     }
 }
 
 @media screen and (max-width: 665px){
-    .carousel-item img{
-        width: 100%;
-    }
-
     #header-video{
         height: 280px !important;
     }
@@ -50,15 +95,14 @@ div{
 
 /* Header */
 #header{
-    /* height: 400px; */
-    /* background-color: rgba(000000, 000000, 000000, 0.15); */
+    background-color: #e63946;
 }
 
 #header-logo{
     width: 100px;
     float: left;
     border-style: none;
-    padding: 20px 0px 20px 0px;
+    padding: 11.5px 0px 11.5px 0px;
     background-color: #e63946;
     text-align: center;
 }
@@ -67,48 +111,7 @@ div{
     width: 50px;
 }
 
-#header-nav{
-    display: none;
-}
-
-#header-list{
-    height: 73px;
-    background-color: #e63946;
-}
-
-.nav-list{
-    font-size: 1em;
-    list-style: none;
-    margin: 0;
-    padding: 12px 0 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    color: #f1faee;
-}
-
-.nav-list li::after{
-    content: "\2022";
-    margin: 0px 15px 0px 15px;
-}
-
-.nav-list li:last-child::after{
-    content: "";
-    margin: 0px 0px 0px 0px;
-}
-
-.nav-button{
-    display: none;
-}
-
-#nav-toggle{
-    display: none;
-}
-
-.nav-list-direction{
-    flex-direction: row;
-}
-
-/* ----- header video ----- */
+/* Video */
 #header-video{
     width: 100%;
     height: 400px;
@@ -118,20 +121,13 @@ div{
     justify-content: center;
 }
 
-#header-video h1{
-    text-align: center;
-    font-size: 2rem;
-    z-index: 1;
-    background-color: #f1faee;
-}
-
 #header-video-container{
     width: 100%;
     height: inherit;
     top: 0;
     left: 0;
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 #header-video-container video{
@@ -165,84 +161,11 @@ div{
     -webkit-transition: 0.5s;
 }
 
-@media screen and (max-width: 920px){
-    #header-nav{
-        height: 73px;
-        line-height: 73px;
-        padding-right: 10px;
-        text-align: right;
-        display: block;
-        background-color: #e63946;
-    }
-
-    .nav-button{
-        display: block;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        margin-top: 10px;
-        padding: 14px 0px 0px 0px;
-        border-radius: 10px;
-        text-align: center;
-        cursor: pointer;
-    }
-
-    .nav-button span{
-        display: block;
-        width: 30px;
-        height: 4px;
-        margin-bottom: 5px;
-        margin-left: 9px;
-        position: relative;
-        background-color: #f1faee;
-        border-radius: 3px;
-        z-index: 1;
-        transform-origin: 14px 0px;   
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    opacity 0.55s ease;
-    }
-
-    #header-list{
-        width: 100%;
-        height: auto;
-        line-height: normal;
-    }
-
-    .nav-list{
-        list-style: inside;
-        padding: 0px 0px 20px 25px;
-        background-color: #e63946;
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        -o-column-count: 2;
-        column-count: 2;
-    }
-
-    .nav-list li{
-        padding-bottom: 5px;
-    }
-
-    .nav-list li::after{
-        content: "";
-        margin: 0px 0px 0px 0px;
-    }
-
-    #nav-toggle:checked ~ ul{
-        display: block;
-        clear: both;
-    }
-
-    .nav-list-direction{
-        display: none;
-        flex-direction: column;
-    }
-}
-
 /* Content */
 #content{
     width: 100%;
-    height: 200px;
+    overflow: auto;
+    padding: 50px 0px 50px 0px;
     background-color: orange;
 }
 
