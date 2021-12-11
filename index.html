@@ -20,6 +20,7 @@
             <a href="index.html"><img src="image/logo.png" alt="Japan's flag"></a>
         </div>
 
+        <!-- Bootstrap #1 - Nav -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
@@ -42,6 +43,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 More Info.
                             </a>
+                            <!-- Bootstrap #6 - Dropdown list -->
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Demographics</a></li>
                                 <li><a class="dropdown-item" href="#">Climate</a></li>
@@ -61,7 +63,11 @@
     </div>
 
     <div id="content">
+
+        <!-- Bootstrap #8 - Collapse -->
         <div class="tab-content">
+
+            <!-- home -->
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">                
                 <!-- Video Container -->
                 <div id="header-video">
@@ -105,36 +111,75 @@
                 </div>
 
                 <!-- Bootstrap #3 - Cards -->
-                <!-- <div class="card" style="width: 18rem;">
-                    <img src="image/example1.png" class="card-img-top" alt="Img 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 1</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-container text-center">
+                    <div class="card">
+                        <img src="image/example1.png" class="card-img-top" alt="Img 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- Bootstrap #7 - Tooltip -->
+                            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="Chupa tooltip">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="image/example2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- Bootstrap #7 - Tooltip -->
+                            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="Chupa tooltip">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="image/example1.png" class="card-img-top" alt="Img 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- Bootstrap #7 - Tooltip -->
+                            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="Chupa tooltip">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="image/example1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="some text">Go somewhere</a>
-                    </div>
-                </div> -->
+            </div>
 
-            </div>
+            <!-- history -->
             <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
-                History
+                <div class="row p-5">
+                    <!-- Bootstrap #4 - Typography -->
+                    <div class="col text-center"><h1>History</h1></div>
+                    <!-- Bootstrap #5 - Responsive Images -->
+                    <div class="section-img text-center"><img src="image/example1.png" class="img-fluid" alt="Img 1"></div>
+                </div>
+                <div class="row px-5 ">
+                    <div class="col border content-text rounded-3">
+                        Conteúdo
+                    </div>
+                </div>
             </div>
+            
             <div class="tab-pane fade" id="cities" role="tabpanel" aria-labelledby="cities-tab">
-                cities
+                Cities
             </div>
         </div>
     </div>
 
     <div id="footer">
-        Footer
+        <div class="row border-bottom p-3 text-start">
+            <div class="col gx-0">
+                Responsive Web Design - Final Project
+            </div>
+        </div>
+        <div class="row p-3 text-start">
+            <div class="row p-1">
+                <div class="col">Leonardo</div>
+            </div>
+            <div class="row p-1">
+                <div class="col">Carlos</div>
+            </div>
+        </div>
     </div>
 
     <!-- bootstrap js -->
@@ -146,10 +191,6 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
-
-        jQuery('button').click( function(e) {
-            jQuery('.collapse').collapse('hide');
-        });
     </script>
 </body>
 
