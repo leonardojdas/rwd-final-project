@@ -20,133 +20,121 @@
             <a href="index.html"><img src="image/logo.png" alt="Japan's flag"></a>
         </div>
 
-        <!-- list of links -->
-        <div id="">
-            <!-- Bootstrap #1 - Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light text-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                                <a class="nav-link active" aria-current="page" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">History</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Location</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Important Cities</a>
-                            </li>
-                            
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="history-tab" data-bs-toggle="pill" data-bs-target="#history" type="button" role="tab" aria-controls="history" aria-selected="true">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="cities-tab" data-bs-toggle="pill" data-bs-target="#cities" type="button" role="tab" aria-controls="cities" aria-selected="true">Cities</a>
+                        </li>
 
-                            <!-- Bootstrap #6 - Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    More Info.
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Demographics</a></li>
-                                    <li><a class="dropdown-item" href="#">Climate</a></li>
-                                    <li><a class="dropdown-item" href="#">Famous Landmarks/Sites</a></li>
-                                    <li><a class="dropdown-item" href="#">Date and Time</a></li>
-                                    <li><a class="dropdown-item" href="#">National Symbols</a></li>
-                                    <li><a class="dropdown-item" href="#">Famous People</a></li>
-                                    <li><a class="dropdown-item" href="#">Natural Features</a></li>
-                                    <li><a class="dropdown-item" href="#">Culture</a></li>
-                                    <li><a class="dropdown-item" href="#">Economy</a></li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <!-- Video Container -->
-        <div id="header-video">
-
-            <!-- Bootstrap #4 - Typography -->
-            <h1 class="display-2">Welcome</h1>
-            
-            <div id="header-video-container">
-                <div class="color-overlay"></div>
-                <video autoplay loop muted>
-                    <!-- https://www.videezy.com/abstract/38536-mount-fuji-japan -->
-                    <source src="video/blossom720-1.5s.mov">
-                </video>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Bootstrap #2 - Carousel -->
-    <div class="carousel-container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <!-- Bootstrap #5 - Responsive Images -->
-                    <img src="image/example1.png" class="img-fluid" alt="Example 1">
-                </div>
-                <div class="carousel-item">
-                    <!-- Bootstrap #5 - Responsive Images -->
-                    <img src="image/example2.png" class="img-fluid" alt="Example 2">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More Info.
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Demographics</a></li>
+                                <li><a class="dropdown-item" href="#">Climate</a></li>
+                                <li><a class="dropdown-item" href="#">Famous Landmarks/Sites</a></li>
+                                <li><a class="dropdown-item" href="#">Date and Time</a></li>
+                                <li><a class="dropdown-item" href="#">National Symbols</a></li>
+                                <li><a class="dropdown-item" href="#">Famous People</a></li>
+                                <li><a class="dropdown-item" href="#">Natural Features</a></li>
+                                <li><a class="dropdown-item" href="#">Culture</a></li>
+                                <li><a class="dropdown-item" href="#">Economy</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </nav>
     </div>
 
     <div id="content">
-        
-        <!-- Bootstrap #3 - Cards -->
-        <div class="card" style="width: 18rem;">
-            <img src="image/example1.png" class="card-img-top" alt="Img 1">
-            <div class="card-body">
-                <h5 class="card-title">Card title 1</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">                
+                <!-- Video Container -->
+                <div id="header-video">
+                    <!-- Bootstrap #4 - Typography -->
+                    <h1 class="display-2">Welcome</h1>
+                    
+                    <div id="header-video-container">
+                        <div class="color-overlay"></div>
+                        <video autoplay loop muted>
+                            <source src="video/blossom720-1.5s.mov">
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Bootstrap #2 - Carousel -->
+                <div class="carousel-container">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- Bootstrap #5 - Responsive Images -->
+                                <img src="image/example1.png" class="img-fluid" alt="Example 1">
+                            </div>
+                            <div class="carousel-item">
+                                <!-- Bootstrap #5 - Responsive Images -->
+                                <img src="image/example2.png" class="img-fluid" alt="Example 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bootstrap #3 - Cards -->
+                <!-- <div class="card" style="width: 18rem;">
+                    <img src="image/example1.png" class="card-img-top" alt="Img 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="image/example1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="some text">Go somewhere</a>
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+                History
+            </div>
+            <div class="tab-pane fade" id="cities" role="tabpanel" aria-labelledby="cities-tab">
+                cities
             </div>
         </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="image/example1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="some text">Go somewhere</a>
-            </div>
-        </div>
-
-        <!-- Bootstrap #8 - Collapsible Content -->
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
-        </div>
-
     </div>
 
     <div id="footer">
-        <!-- Bootstrap #7 - Tooltips -->
+        Footer
     </div>
 
     <!-- bootstrap js -->
@@ -158,6 +146,10 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+
+        jQuery('button').click( function(e) {
+            jQuery('.collapse').collapse('hide');
+        });
     </script>
 </body>
 
