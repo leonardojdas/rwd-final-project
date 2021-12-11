@@ -1,4 +1,3 @@
-
 /* Elements */
 body{
     margin: 0px;
@@ -7,9 +6,11 @@ body{
     font-size: 1em !important;
 }
 
+
+/* ISSO ZUOU O TOOLTIP!!!!!! FDP
 div{
     width: 100%;
-}
+} */
 
 /* Bootstrap #1 - Navibar - Minor changes */
 /* https://getbootstrap.com/docs/5.1/components/navbar/ */
@@ -59,6 +60,7 @@ div{
 }
 
 /* Bootstrap #3 - Card */
+/* https://getbootstrap.com/docs/5.1/components/card/ */
 .card{
     margin: 0 auto;
     float: left;
@@ -66,19 +68,23 @@ div{
 }
 
 /* Bootstrap #4 - Typography */
+/* https://getbootstrap.com/docs/5.1/content/typography/ */
 .display-2{
     z-index: 1;
     background-color: #f1faee;
 }
 
 /* Bootstrap #5 - Responsive Images */
+/* https://getbootstrap.com/docs/5.1/content/images/#responsive-images */
 
 /* Bootstrap #6 - Dropdown */
+/* https://getbootstrap.com/docs/5.1/components/dropdowns/ */
 
 /* Bootstrap #7 - Tooltips */
 /* https://getbootstrap.com/docs/5.1/components/tooltips/ */
 
-/* Bootstrap #8 -  Collapsible Content */
+/* Bootstrap #8 -  Collapse Content */
+/* https://getbootstrap.com/docs/5.1/components/collapse/ */
 
 
 @media screen and (min-width: 665px) and (max-width: 760px){
@@ -165,6 +171,7 @@ div{
 #content{
     width: 100%;
     overflow: auto;
+    text-align: center;
     padding: 50px 0px 50px 0px;
     background-color: orange;
 }
@@ -173,5 +180,7 @@ div{
 #footer{
     width: 100%;
     height: 200px;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
     background-color: orchid;
 }
