@@ -12,7 +12,7 @@ div{
     width: 100%;
 } */
 
-/* Bootstrap #1 - Navibar - Minor changes */
+/* Bootstrap #1 - Navbar */
 /* https://getbootstrap.com/docs/5.1/components/navbar/ */
 .navbar-brand{
     margin-right: 0 !important;
@@ -30,6 +30,13 @@ div{
     padding-left: 0 !important;
 }
 
+@media screen and (max-width: 992px){
+    .nav{
+        display: block !important;
+    }
+}
+
+
 /* Bootstrap #2 - Carosel - Minor changes */
 /* https://getbootstrap.com/docs/5.1/components/carousel/ */
 .carousel-item{
@@ -41,6 +48,7 @@ div{
 }
 
 .carousel-indicators{
+    margin-right: 0px !important;
     margin-left: 0px !important;
 }
 
@@ -85,7 +93,6 @@ div{
 
 /* Bootstrap #8 -  Collapse Content */
 /* https://getbootstrap.com/docs/5.1/components/collapse/ */
-
 
 @media screen and (min-width: 665px) and (max-width: 760px){
     #header-video{
@@ -170,9 +177,10 @@ div{
 /* Content */
 #content{
     width: 100%;
-    overflow: auto;
-    text-align: center;
-    padding: 50px 0px 50px 0px;
+    /* overflow: auto; */
+    /* clear: both; */
+    /* text-align: center; */
+    padding: 0px 0px 0px 0px;
     background-color: orange;
 }
 
@@ -184,3 +192,5 @@ div{
     padding: 50px 0px 50px 0px;
     background-color: orchid;
 }
+
+.collapse.in { min-height: 50px;border: 1px solid blue; }
