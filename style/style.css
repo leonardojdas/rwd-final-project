@@ -187,6 +187,7 @@ div{
 /* Content */
 #content{
     width: 100%;
+    background-color: #ffffff;
 }
 
 .content-text{
