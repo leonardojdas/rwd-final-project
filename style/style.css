@@ -82,6 +82,8 @@ div{
     padding: 50px;
     display: flex;
     justify-content: center;
+    position: relative;
+    background-color: #ffffff;
 }
 
 /* Bootstrap #4 - Typography */
@@ -196,21 +198,33 @@ div{
 }
 
 /* sections */
-#history > div{
+#history > div,
+#location > div,
+#cities > div
+{
     padding: 50px 0px 0px 0px;
     width: 100%;
 }
 
-#history > div:last-child{
+#history > div:last-child,
+#location > div:last-child,
+#cities > div:last-child
+{
     padding: 0px 0px 50px 0px;
     width: 100%;
 }
 
-#history .border{
+#history .border,
+#location .border,
+#cities .border
+{
     border-color: #f7f7f9 !important;
 }
 
-#history img{
+#history img,
+#location img,
+#cities img
+{
     width: 600px;
 }
 
@@ -225,6 +239,7 @@ div{
     font-size: 0.8em;
     padding: 50px;
     background-color: #f7f7f9;
+    position: relative;
 }
 
 #footer .border{
