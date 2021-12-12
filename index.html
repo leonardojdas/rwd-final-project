@@ -36,7 +36,10 @@
                             <a class="nav-link" id="history-tab" data-bs-toggle="pill" data-bs-target="#history" type="button" role="tab" aria-controls="history" aria-selected="true">History</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="cities-tab" data-bs-toggle="pill" data-bs-target="#cities" type="button" role="tab" aria-controls="cities" aria-selected="true">Cities</a>
+                            <a class="nav-link" id="location-tab" data-bs-toggle="pill" data-bs-target="#location" type="button" role="tab" aria-controls="location" aria-selected="true">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="cities-tab" data-bs-toggle="pill" data-bs-target="#cities" type="button" role="tab" aria-controls="cities" aria-selected="true">Important Cities</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -159,9 +162,35 @@
                     </div>
                 </div>
             </div>
+
+            <!-- location -->
+            <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
+                <div class="row p-5">
+                    <!-- Bootstrap #4 - Typography -->
+                    <div class="col text-center"><h1>Location</h1></div>
+                    <!-- Bootstrap #5 - Responsive Images -->
+                    <div class="section-img text-center"><img src="image/location.jpeg" class="img-fluid rounded-3" alt="Location" data-bs-toggle="tooltip" data-placement="top" title="Location"></div>
+                </div>
+                <div class="row px-5 ">
+                    <div class="col border content-text rounded-3">
+                        World location, country size, borders, etc
+                    </div>
+                </div>
+            </div>
             
+            <!-- important cities -->
             <div class="tab-pane fade" id="cities" role="tabpanel" aria-labelledby="cities-tab">
-                Cities
+                <div class="row p-5">
+                    <!-- Bootstrap #4 - Typography -->
+                    <div class="col text-center"><h1>Important Cities</h1></div>
+                    <!-- Bootstrap #5 - Responsive Images -->
+                    <div class="section-img text-center"><img src="image/cities.jpeg" class="img-fluid rounded-3" alt="Important Cities" data-bs-toggle="tooltip" data-placement="top" title="Important Cities"></div>
+                </div>
+                <div class="row px-5 ">
+                    <div class="col border content-text rounded-3">
+                        Important Cities or Regions
+                    </div>
+                </div>
             </div>
         </div>
     </div>
