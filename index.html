@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Japan</title>
+    <title>Know Japan</title>
     <link rel="stylesheet" href="style/style.css">
     
     <!-- Boostrap CSS -->
@@ -29,18 +29,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="history-tab" data-bs-toggle="pill" data-bs-target="#history" type="button" role="tab" aria-controls="history" aria-selected="true">History</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="location-tab" data-bs-toggle="pill" data-bs-target="#location" type="button" role="tab" aria-controls="location" aria-selected="true">Location</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="cities-tab" data-bs-toggle="pill" data-bs-target="#cities" type="button" role="tab" aria-controls="cities" aria-selected="true">Important Cities</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                        <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                        <li class="nav-item"><a class="nav-link" href="important-cities.html">Important Cities</a></li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,15 +40,8 @@
                             </a>
                             <!-- Bootstrap #6 - Dropdown list -->
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Demographics</a></li>
-                                <li><a class="dropdown-item" href="#">Climate</a></li>
-                                <li><a class="dropdown-item" href="#">Famous Landmarks/Sites</a></li>
-                                <li><a class="dropdown-item" href="#">Date and Time</a></li>
-                                <li><a class="dropdown-item" href="#">National Symbols</a></li>
-                                <li><a class="dropdown-item" href="#">Famous People</a></li>
-                                <li><a class="dropdown-item" href="#">Natural Features</a></li>
-                                <li><a class="dropdown-item" href="#">Culture</a></li>
-                                <li><a class="dropdown-item" href="#">Economy</a></li>
+                                <li class="nav-item"><a class="nav-link" href="famous-landmarks-sites.html">Famous Landmarks & Sites</a></li>
+                                <li class="nav-item"><a class="nav-link" href="national-symbols.html">National Symbols</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -67,142 +52,91 @@
 
     <div id="content">
 
-        <!-- Bootstrap #8 - Collapse -->
-        <div class="tab-content">
+        <!-- Video Container -->
+        <div id="header-video">
+            <!-- Bootstrap #4 - Typography -->
+            <h1 class="display-2">Welcome To Japan</h1>
 
-            <!-- home -->
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">                
-                <!-- Video Container -->
-                <div id="header-video">
-                    <!-- Bootstrap #4 - Typography -->
-                    <h1 class="display-2">Welcome To Japan</h1>
-                                     
-                    <div class="color-overlay">
-                        <div id="header-video-container">
-                            <video autoplay loop muted>
-                                <source src="video/japanMontage.mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-header"></div>
-                <!-- Bootstrap #2 - Carousel -->
-                <h3></h3>
-                <div class="carousel-container bg-transparent">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <!-- Bootstrap #5 - Responsive Images -->
-                                <a href="#">
-                                <img src="image/history.jpeg" class="img-fluid rounded-3" alt="History">
-                                <h2 class="carousel-text">History</h2>
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <!-- Bootstrap #5 - Responsive Images -->
-                                <a href="#">
-                                <img src="image/cities.jpeg" class="img-fluid rounded-3" alt="Important Cities">
-                                <h2 class="carousel-text">Important Cities</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                        
-                    </div>
-                </div>
-
-                <!-- Bootstrap #3 - Cards -->
-                <div class="card-container text-center">
-                    <div class="card">
-                        <img src="image/example1.png" class="card-img-top" alt="Img 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Bootstrap #7 - Tooltip -->
-                            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="Chupa tooltip">Go somewhere</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="image/location.jpeg" class="card-img-top" alt="Location">
-                        <div class="card-body">
-                            <h5 class="card-title">Location</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Bootstrap #7 - Tooltip -->
-                            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="Location">Link</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="image/example1.png" class="card-img-top" alt="Img 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 3</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Bootstrap #7 - Tooltip -->
-                            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="Chupa tooltip">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- history -->
-            <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
-                <div class="row p-5">
-                    <!-- Bootstrap #4 - Typography -->
-                    <div class="col text-center"><h1>History</h1></div>
-                    <!-- Bootstrap #5 - Responsive Images -->
-                    <div class="section-img text-center"><img src="image/history.jpeg" class="img-fluid rounded-3" alt="History" data-bs-toggle="tooltip" data-placement="top" title="History"></div>
-                </div>
-                <div class="row px-5 ">
-                    <div class="col border content-text rounded-3">
-                        Country history, biography of a famous leader, description of an important event, etc.
-                    </div>
-                </div>
-            </div>
-
-            <!-- location -->
-            <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
-                <div class="row p-5">
-                    <!-- Bootstrap #4 - Typography -->
-                    <div class="col text-center"><h1>Location</h1></div>
-                    <!-- Bootstrap #5 - Responsive Images -->
-                    <div class="section-img text-center"><img src="image/location.jpeg" class="img-fluid rounded-3" alt="Location" data-bs-toggle="tooltip" data-placement="top" title="Location"></div>
-                </div>
-                <div class="row px-5 ">
-                    <div class="col border content-text rounded-3">
-                        World location, country size, borders, etc
-                    </div>
-                </div>
-            </div>
-            
-            <!-- important cities -->
-            <div class="tab-pane fade" id="cities" role="tabpanel" aria-labelledby="cities-tab">
-                <div class="row p-5">
-                    <!-- Bootstrap #4 - Typography -->
-                    <div class="col text-center"><h1>Important Cities</h1></div>
-                    <!-- Bootstrap #5 - Responsive Images -->
-                    <div class="section-img text-center"><img src="image/cities.jpeg" class="img-fluid rounded-3" alt="Important Cities" data-bs-toggle="tooltip" data-placement="top" title="Important Cities"></div>
-                </div>
-                <div class="row px-5 ">
-                    <div class="col border content-text rounded-3">
-                        Important Cities or Regions
-                    </div>
+            <div id="header-video-container">
+                <div class="color-overlay">
+                    <video autoplay loop muted>
+                        <source src="video/japan-intro-1.mp4">
+                    </video>
                 </div>
             </div>
         </div>
+
+        <!-- Bootstrap #2 - Carousel -->
+        <div class="carousel-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- Bootstrap #5 - Responsive Images -->
+                        <img src="image/famous-landmarks-sites.jpeg" class="img-fluid rounded-3" alt="National Symbols">
+                        <div class="carousel-caption">
+                            <h2>Famous Landmarks & Sites</h2>
+                            <a href="famous-landmarks-sites.html" class="carousel-link" data-bs-toggle="tooltip" data-placement="top" title="Famous Landmarks & Cities">Click here</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <!-- Bootstrap #5 - Responsive Images -->
+                        <img src="image/location.jpeg" class="img-fluid rounded-3" alt="Location">
+                        <div class="carousel-caption">
+                            <h2>Location</h2>
+                            <a href="location.html" class="carousel-link" data-bs-toggle="tooltip" data-placement="top" title="Location">Click here</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+        </div>
+
+        <!-- Bootstrap #3 - Cards -->
+        <div class="card-container text-center">
+            <div class="card">
+                <img src="image/national-symbols.jpeg" class="card-img-top" alt="National Symbols">
+                <div class="card-body">
+                    <h5 class="card-title">National Symbols</h5>
+                    <p class="card-text">Desc</p>
+                    <!-- Bootstrap #7 - Tooltip -->
+                    <a href="national-symbols.html" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="National Symbols">Click here</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/history.jpeg" class="card-img-top" alt="History">
+                <div class="card-body">
+                    <h5 class="card-title">History</h5>
+                    <p class="card-text">Desc</p>
+                    <!-- Bootstrap #7 - Tooltip -->
+                    <a href="history.html" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="History">Click here</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/important-cities.jpeg" class="card-img-top" alt="Important Cities">
+                <div class="card-body">
+                    <h5 class="card-title">Important Cities</h5>
+                    <p class="card-text">Desc</p>
+                    <!-- Bootstrap #7 - Tooltip -->
+                    <a href="important-cities.html" class="btn btn-primary" data-bs-toggle="tooltip" data-placement="top" title="Important Cities">Click here</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div id="footer">

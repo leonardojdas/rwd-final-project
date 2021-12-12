@@ -30,7 +30,6 @@ body{
     }
 }
 
-
 /* Bootstrap #2 - Carosel - Minor changes */
 /* https://getbootstrap.com/docs/5.1/components/carousel/ */
 .carousel-item{
@@ -54,23 +53,44 @@ body{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 
+@media screen and (max-width: 890px){
+    .carousel-control-prev-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+    }
+    
+    .carousel-control-next-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    }
+}
+
 .carousel-container{
     padding: 50px 0px 50px 0px;
     background-color: #f7f7f9;
     position: relative;
-
     z-index: auto;
 }
 
+.carousel-link{
+    color: #e63946;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.carousel-link:hover{
+    color: #c23440;
+}
+
 /* Carousel text over */
-.carousel-text{
+/* .carousel-text{
     text-align: center;
     margin: 0 auto;
     padding-top: 0.5%;
     text-decoration:none;
     color:black;
-    
-}
+} */
+
 /* Bootstrap #3 - Card */
 /* https://getbootstrap.com/docs/5.1/components/card/ */
 .card{
@@ -83,7 +103,7 @@ body{
 
 .card-container{
     overflow: auto;
-    padding: 50px;
+    padding: 50px !important;
     display: flex;
     justify-content: center;
     position: relative;
@@ -92,9 +112,9 @@ body{
 
 /* Bootstrap #4 - Typography */
 /* https://getbootstrap.com/docs/5.1/content/typography/ */
-h1.display-2{
-    float: left;
-    margin-top: -65%;
+#header-video > h1{
+    /* float: left; */
+    /* margin-top: -65%; */
     z-index: 1;
     background-color: #ffeaee;
 }
@@ -110,18 +130,9 @@ h1.display-2{
 
 /* Bootstrap #8 -  Collapse Content */
 /* https://getbootstrap.com/docs/5.1/components/collapse/ */
-
-@media screen and (min-width: 665px) and (max-width: 760px){
-    #header-video{
-        padding-top: 50%;
-        /*height: calc(100vw - 375px) !important; */
-    }
-}
-
-@media screen and (max-width: 665px){
-    #header-video{
-        padding-top:56% !important;
-    }
+.card-body{
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 /* Header */
@@ -146,12 +157,12 @@ h1.display-2{
 /* Video */
 #header-video{
     width: 100%;
-    padding-top: 60%;
-    height: 400px;
+    height: calc(100vw - calc(100vw / 2));
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: yellowgreen; */
 }
 
 #header-video-container{
@@ -169,7 +180,6 @@ h1.display-2{
 
 .color-overlay{
     width: 100%;
-    height: inherit;
     position: absolute;
     top: 0;
     left: 0;
@@ -203,41 +213,25 @@ h1.display-2{
 .content-text{
     padding: 30px 30px 30px 30px !important;
     background-color: #f7f7f9;
-}
-
-/* sections */
-#history > div,
-#location > div,
-#cities > div
-{
-    padding: 50px 0px 0px 0px;
-    width: 100%;
-}
-
-#history > div:last-child,
-#location > div:last-child,
-#cities > div:last-child
-{
-    padding: 0px 0px 50px 0px;
-    width: 100%;
-}
-
-#history .border,
-#location .border,
-#cities .border
-{
     border-color: #f7f7f9 !important;
+    overflow: auto;
 }
 
-#history img,
-#location img,
-#cities img
-{
-    width: 600px;
+#content h1{
+    padding: 30px;
 }
 
-.section-img{
-    padding: 25px 0px 0px 0px;
+#content > div:last-child{
+    padding: 0px 0px 50px 0px;
+}
+
+.periods{
+    padding: 0px 50px 0px 50px;
+    overflow: auto;
+}
+
+.btn-period{
+    margin-bottom: 5px;
 }
 
 /* Footer */
@@ -248,10 +242,6 @@ h1.display-2{
     padding: 50px;
     background-color: #f7f7f9;
     position: relative;
-}
-
-#footer .border{
-    border-color: red !important;
 }
 
 #footer > div:nth-child(1){

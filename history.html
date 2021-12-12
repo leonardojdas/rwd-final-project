@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Know Japan</title>
+    <link rel="stylesheet" href="style/style.css">
+    
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        
+        <!-- Logo -->
+        <div id="header-logo">
+            <a href="index.html"><img src="image/logo.png" alt="Japan's flag"></a>
+        </div>
+
+        <!-- Bootstrap #1 - Nav -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                        <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                        <li class="nav-item"><a class="nav-link" href="important-cities.html">Important Cities</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More Info.
+                            </a>
+                            <!-- Bootstrap #6 - Dropdown list -->
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li class="nav-item"><a class="nav-link" href="famous-landmarks-sites.html">Famous Landmarks & Sites</a></li>
+                                <li class="nav-item"><a class="nav-link" href="national-symbols.html">National Symbols</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="content">
+
+        <div class="p-5">
+            <!-- Bootstrap #4 - Typography -->
+            <div class="col text-center"><h1 class="display-3">History</h1></div>
+            <!-- Bootstrap #5 - Responsive Images -->
+            <div class="section-img text-center"><img src="image/history.jpeg" class="img-fluid rounded-3" alt="History" data-bs-toggle="tooltip" data-placement="top" title="History"></div>
+        </div>
+
+        <div class="px-5">
+            <div class="content-text col rounded-3">
+
+                <p>
+                    Know Japan, a large, highly industrialized island nation on the eastern of Asia. The history of Japan is known around the world for the samurai warriors, the bushido code, the Meiji Restoration, and much more. Japan is a worthwhile place to visit with a rich culture and several faces.
+                    <!-- https://www.japan-guide.com/e/e641.html -->
+                </p>
+
+                <!-- Bootstrap #8 - Collapse -->
+                <div class="periods text-center">
+                    <h1>Periods</h1>
+
+                    <p>
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#jomon" role="button" aria-expanded="false" aria-controls="jomon">Jomon Period</a>
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#yayoi" role="button" aria-expanded="false" aria-controls="yayoi">Yayoi Period</a>
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#kofun" role="button" aria-expanded="false" aria-controls="kofun">Kofun Period</a>
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#asuka" role="button" aria-expanded="false" aria-controls="asuka">Asuka Period</a>
+
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#kamakura" role="button" aria-expanded="false" aria-controls="kamakura">The Kamakura Period</a>
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#muromachi" role="button" aria-expanded="false" aria-controls="muromachi">The Muromachi Period</a>
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#azuchi-momoyama" role="button" aria-expanded="false" aria-controls="azuchi-momoyama">The Azuchi-Momoyama Period</a>
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#tokugawa" role="button" aria-expanded="false" aria-controls="tokugawa">Tokugawa</a>
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#taisho" role="button" aria-expanded="false" aria-controls="taisho">Emperor Taisho Period</a>
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#sino-japanese" role="button" aria-expanded="false" aria-controls="sino-japanese">The Second Sino-Japanese War Period</a>
+                        <a class="btn btn-danger btn-period" data-bs-toggle="collapse" href="#ww2" role="button" aria-expanded="false" aria-controls="ww2">WW2 Period</a>
+                        
+                    </p>
+
+                    <div id="periods" class="text-start">
+                        <div class="collapse" id="jomon" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                In this era, around 13000BC to 300BC, the natives of the Japanese islands were basically gatherers, hunters, and fishers. This era is known as the time when people started using pottery.
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="yayoi" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                From (300 BC to 250 AD). In this period, the rice culture arrived in Japan, and with the technology, social classes started to evolve, making the land unite around influential landowners. It's known that during this period, a queen called Himiko reigned in Japan over that time. Modern ideas and technology were received in this period from Korea. This era also has the evolution of the pottery as a distal.
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="kofun" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                From 250 to 538 AD. In this era, the first country unification happened as Yamato Japan, with the political center in the province of Yamato (known today as Nara Prefecture). The name of the period was given because of the large tombs called kofun that was built for political leaders. In this era, Yamato Japan didn't include the whole area known as today's Japan. During the kofun period, the Soga clan took over political power. From then on, most emperors would only act as the symbol of the state, having no actual political power.
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="asuka" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                From 538 to 710. The influence from Korea and China started to increase, and Buddhism was introduced to the country, being promoted by the ruling class. A prince known as Shotoku had a critical paper promoting Chinese ideologies ideas in the country. Confucianism and Taoism were also introduced to Japan in this era. A new era has started in the year 645. The Fujiwara clan's generation lasted until the 11th century, the samurai era. In the same year, abir reform was made, creating a new government and administrative system based on the Chinese model. In 710, the first Japanese permanent capital was built in Nara. The city had large Buddhist monasteries that earned significant political influence, making the central government capital move decades later to Nagaoka in 784. Ten years later, the capital was moved again to Kyoto, where it remained for over a thousand years. The Fujiwara clan was only taken out of power when the new emperor Go-Sanjo decided to rule the country himself, not letting the family control him any longer. In 1086, Go-Sanjo abdicated but continued to lead behind the political stage. This new form of government was called the Insei government, creating another form of government until 1156, when a new leader of Japan emerged. After the Heiji Rising (1159), a struggle for power between the two families, Taira Kiyomori evolved as the leader of Japan and ruled the country from 1168 to 1178 through the emperor. The major threats with which he was confronted were not only the rivaling Minamoto but also the increasingly militant Buddhist monasteries, which frequently led to wars between each other and disturbed public order. After Kiyomori's death, the Taira and Minamoto clans fought a deciding war for supremacy, the Gempei War, which lasted from 1180 to 1185. By the end of the war, the Minamoto were able to end Taira supremacy, and Minamoto Yoritomo succeeded as the leader of Japan. After eliminating all of his potential and acute enemies, including close family members, he was appointed Shogun (highest military officer) and established a new government in his home city Kamakura.
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="kamakura" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                <!-- https://www.thoughtco.com/the-kamakura-period-in-japan-195288 -->
+                                The Kamakura Period in Japan lasted from 1192 to 1333, bringing the emergence of shogun rule. Japanese warlords, known as shoguns, claimed power from the hereditary monarchy and their scholar-courtiers, giving the samurai warriors and their lords ultimate control of the early Japanese empire. Society, too, changed radically, and a new feudal system emerged.
+                                Along with these changes came a cultural shift in Japan. Zen Buddhism spread from China, as well as a rise in realism in art and literature, favored by the ruling warlords of the time. However, cultural strife and political divides eventually led to the shogunate rulership's downfall, and a new imperial rule took over in 1333.
+                                Unofficially, the Kamakura Era began in 1185, when the Minamoto clan defeated the Taira family in the Genpei War. However, it was not until 1192 that the emperor named Minamoto Yoritomo as the first Shogun of Japan — whose full title is "Seii Taishogun," or "great general who subdues the eastern barbarians" — that the period truly took shape. This system would endure under the leadership of different clans for almost 700 years until the Meiji Restoration of 1868.After Minamoto Yoritomo's death, the usurping Minamoto clan had its own power usurped by the Hojo clan, who claimed the title of "shikken" or "regent" in 1203. 
+                                During the Kamakura era, art and literature shifted from the formal, stylized aesthetic favored by the nobility to a realistic and highly-charged style that catered to warrior tastes. This emphasis on realism would continue through the Meiji Era and is visible in many ukiyo-e prints from shogunal Japan.
+                                The greatest crisis of the Kamakura Era came with a threat from overseas. In 1271, the Mongol ruler Kublai Khan — grandson of Genghis Khan — established the Yuan Dynasty in China. After consolidating power over all of China, Kublai sent emissaries to Japan demanding tribute; the shikken's government flatly refused on behalf of the Shogun and emperor. 
+                                
+                                Szczepanski, Kallie. "The Kamakura Period." ThoughtCo, Aug. 28, 2020, thoughtco.com/the-kamakura-period-in-japan-195288.
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="muromachi" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                <!-- https://factsanddetails.com/japan/cat16/sub107/item2766.html -->
+                                The Muromachi Period (1338-1573), also known as the Ashikaga Period, began when Ashikaga Takauji became Shogun in 1338 and was characterized by chaos, violence and civil war.
+                                According to the Metropolitan Museum of Art: The era when members of the Ashikaga family occupied the position of Shogun is known as the Muromachi period, named after the district in Kyoto where their headquarters was located. Although the Ashikaga clan occupied the shogunate for nearly 200 years, they never succeeded in extending their political control as far as did the Kamakura bakufu. Because provincial warlords, called daimyo, retained a large degree of power, they were able to strongly influence political events and cultural trends during this time.
+                                There was almost constant warfare. Central authority had dissolved and about 20 clans fought for supremacy during a 100-year period called the "Age of the Country at War.
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="azuchi-momoyama" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                The Azuchi-Momoyama period - from 1573 to 1603. Oda Nobunaga achieved control over the province of Owari (around the modern city of Nagoya) in 1559. As many other daimyo, he was keen in uniting Japan. Strategically favorably located, he succeeded in capturing the capital in 1568.
+                                After establishing himself in Kyoto, Nobunaga continued to eliminate his enemies. Among them were some militant Buddhist sects, especially the Ikko sect (Pure Land Sect) which had become very powerful in several provinces. Nobunaga destroyed the Enryakuji monastery near Kyoto completely in 1571. His fight against the Ikko sect continued until 1580.
+                                Rather fortunate was Nobunaga concerning two of his most dangerous rivals in the East: Takeda Shingen and Uesugi Kenshin. Both of them died before they were able to confront Nobunaga. After Shingen's death, Nobunaga defeated the Takeda clan in the battle of Nagashino (1575), making use of modern warfare.
+                                In 1592, Hideyoshi, after having united the country and expelling Christian missionaries from the country, attempted to conquer China. He was able to conquer Seul after invading Korea, but lost after China and Korea united to push him back.
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="tokugawa" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                Japan's Tokugawa (or Edo) period, which lasted from 1603 to 1867, would be the final era of traditional Japanese government, culture and society before the Meiji Restoration of 1868 toppled the long-reigning Tokugawa shoguns and propelled the country into the modern era. Tokugawa Ieyasu's dynasty of shoguns presided over 250 years of peace and prosperity in Japan. To guard against external influence, they also worked to close off Japanese society from Westernizing influences, particularly Christianity. But with the Tokugawa shogunate growing increasingly weak by the mid-19th century, two powerful clans joined forces in early 1868 to seize power as part of an "imperial restoration" named for Emperor Meiji. The Meiji Restoration spelled the beginning of the end for feudalism in Japan, and would lead to the emergence of modern Japanese culture, politics and society.
+                    
+                                During the 1500s, power was decentralized in Japan, which was torn apart by warfare between competing feudal lords (daimyo) for nearly a century. Following his victory in the Battle of Sekigahara in 1600, however, Tokugawa Ieyasu (1543-1616) swiftly consolidated power from his heavily fortified castle at Edo (now Tokyo). The prestigious but largely powerless imperial court named Ieyasu as Shogun (or supreme military leader) in 1603, beginning a dynasty that would rule Japan for the next two-and-a-half centuries.
+                                The difficulty of controlling both the Christian daimyo in Kyūshū and their trade with the Europeans was known as the "Christian problem." By 1612, the Shogun's retainers and residents of Tokugawa lands had been ordered to forswear Christianity. More restrictions came in 1616 (the restriction of foreign trade to Nagasaki and Hirado, an island northwest of Kyūshū), 1622 (the execution of 120 missionaries and converts), 1624 (the expulsion of the Spanish), and 1629 (the execution of thousands of Christians). Finally, in 1635 an edict prohibited any Japanese from traveling outside Japan or, if someone left, from ever returning. In 1636 the Dutch were restricted to Dejima, a small artificial island, and thus, not true Japanese soil, in the harbor at Nagasaki.
+                    
+                                In the end of the 18th century, external pressure started to be an increasingly important issue, when the Russians first tried to establish trade contacts with Japan without success. They were followed by other European nations and the Americans in the 19th century. It was eventually Commodore Perry in 1853 and again in 1854 who forced the Tokugawa government to open a limited number of ports for international trade. However, the trade remained very limited until the Meiji restoration in 1868.
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="taisho" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                <!-- https://www.history.com/topics/japan/meiji-restoration -->
+                                During the era of the weak Emperor Taisho (1912-26), the political power shifted from the oligarchic clique (genro) to the parliament and the democratic parties.
+                                In the First World War, Japan joined the Allied powers, but played only a minor role in fighting German colonial forces in East Asia. At the following Paris Peace Conference of 1919, Japan's proposal of amending a "racial equality clause" to the covenant of the League of Nations was rejected by the United States, Britain and Australia. Arrogance and racial discrimination towards the Japanese had plagued Japanese-Western relations since the forced opening of the country in the 1800s, and were again a major factor for the deterioration of relations in the decades preceeding World War 2. In 1924, for example, the US Congress passed the Exclusion Act that prohibited further immigration from Japan.
+                                After WW1, Japan's economical situation worsened. The Great Kanto Earthquake of 1923 and the world wide depression of 1929 intensified the crisis.
+                                During the 1930s, the military established almost complete control over the government. Many political enemies were assassinated, and communists persecuted. Indoctrination and censorship in education and media were further intensified. Navy and army officers soon occupied most of the important offices, including the one of the prime minister.
+                                Already earlier, Japan followed the example of Western nations and forced China into unequal economical and political treaties. Furthermore, Japan's influence over Manchuria had been steadily growing since the end of the Russo-Japanese war of 1904-05. When the Chinese Nationalists began to seriously challenge Japan's position in Manchuria in 1931, the Kwantung Army (Japanese armed forces in Manchuria) occupied Manchuria. In the following year, "Manchukuo" was declared an independent state, controlled by the Kwantung Army through a puppet government. In the same year, the Japanese air force bombarded Shanghai in order to protect Japanese residents from anti Japanese movements.
+                                In 1933, Japan withdrew from the League of Nations since she was heavily criticized for her actions in China.
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="sino-japanese" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                <!-- https://www.britannica.com/event/Second-Sino-Japanese-War                     -->
+                                The Second Sino-Japanese War, (1937–45), conflict that broke out when China began a full-scale resistance to the expansion of Japanese influence in its territory (which had begun in 1931). The war, which remained undeclared until December 9, 1941, may be divided into three phases: a period of rapid Japanese advance until the end of 1938, a period of virtual stalemate until 1944, and the final period when Allied counterattacks, principally in the Pacific and on Japan's home islands, brought about Japan's surrender.
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="ww2" data-bs-parent="#periods">
+                            <div class="card card-body">
+                                WW2 - In 1940, Japan occupied French Indochina (Vietnam) upon agreement with the French Vichy government, and joined the Axis powers Germany and Italy. These actions intensified Japan's conflict with the United States and Great Britain which reacted with an oil boycott. The resulting oil shortage and failures to solve the conflict diplomatically made Japan decide to capture the oil rich Dutch East Indies (Indonesia) and to start a war with the US and Great Britain.
+                                In December 1941, Japan attacked the Allied powers at Pearl Harbor and several other points throughout the Pacific. Japan was able to expand her control over a large territory that expanded to the border of India in the West and New Guinea in the South within the following six months.
+                                The turning point in the Pacific War was the battle of Midway in June 1942. From then on, the Allied forces slowly won back the territories occupied by Japan. In 1944, intensive air raids started over Japan. In spring 1945, US forces invaded Okinawa in one of the war's bloodiest battles.
+                                On July 27, 1945, the Allied powers requested Japan in the Potsdam Declaration to surrender unconditionally, or destruction would continue. However, the military did not consider surrendering under such terms, partially even after US military forces dropped two atomic bombs on Hiroshima and Nagasaki on August 6 and 9, and the Soviet Union entered the war against Japan on August 8.
+                                On August 14, however, Emperor Showa finally decided to surrender unconditionally.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+        <div class="row text-start">
+            <div class="col gx-0">
+                Responsive Web Design - Final Project
+            </div>
+        </div>
+        <div class="row border-bottom text-start">
+            <div class="col py-3 gx-0">
+                Fair Use Disclaimer: This website was made for educational purposes only.
+            </div>
+        </div>
+        <div class="row text-start">
+            <div class="col py-3 gx-0">
+                Carlos Alves, Leonardo Silva
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- initializing tooltips -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
