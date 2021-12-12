@@ -1,0 +1,1 @@
+To keep the layout's consistent, all images must be defined with 760x380
