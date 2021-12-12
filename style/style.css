@@ -58,9 +58,19 @@ body{
     padding: 50px 0px 50px 0px;
     background-color: #f7f7f9;
     position: relative;
+
     z-index: auto;
 }
 
+/* Carousel text over */
+.carousel-text{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0.5%;
+    text-decoration:none;
+    color:black;
+    
+}
 /* Bootstrap #3 - Card */
 /* https://getbootstrap.com/docs/5.1/components/card/ */
 .card{
@@ -82,9 +92,11 @@ body{
 
 /* Bootstrap #4 - Typography */
 /* https://getbootstrap.com/docs/5.1/content/typography/ */
-.display-2{
+h1.display-2{
+    float: left;
+    margin-top: -65%;
     z-index: 1;
-    background-color: #f1faee;
+    background-color: #ffeaee;
 }
 
 /* Bootstrap #5 - Responsive Images */
@@ -101,13 +113,14 @@ body{
 
 @media screen and (min-width: 665px) and (max-width: 760px){
     #header-video{
-        height: calc(100vw - 375px) !important;
+        padding-top: 50%;
+        /*height: calc(100vw - 375px) !important; */
     }
 }
 
 @media screen and (max-width: 665px){
     #header-video{
-        height: 280px !important;
+        padding-top:56% !important;
     }
 }
 
@@ -133,6 +146,7 @@ body{
 /* Video */
 #header-video{
     width: 100%;
+    padding-top: 60%;
     height: 400px;
     position: relative;
     display: flex;
